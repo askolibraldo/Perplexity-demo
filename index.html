@@ -1,1 +1,40 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Perplexity Demo: Image Crop & Filter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Perplexity Demo: Image Crop & Filter Tools</h1>
+
+    <div class="upload-section">
+      <label for="imgInput">Upload an Image</label>
+      <input type="file" accept="image/*" id="imgInput">
+    </div>
+
+    <div class="img-tools">
+      <canvas id="mainCanvas"></canvas>
+      <div class="tool-controls">
+        <h2>Crop Tool</h2>
+        <button id="cropBtn">Crop Selected Area</button>
+
+        <h2>Filters</h2>
+        <select id="filterSelect">
+          <option value="none">None</option>
+          <option value="grayscale">Grayscale</option>
+          <option value="brightness">Brightness</option>
+          <option value="contrast">Contrast</option>
+          <option value="invert">Invert</option>
+          <option value="sepia">Sepia</option>
+        </select>
+        <button id="applyFilterBtn">Apply Filter</button>
+        <button id="resetBtn">Reset Image</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
