@@ -1,1 +1,96 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f9f9fb;
+  margin: 0;
+  padding: 0;
+}
 
+.container {
+  margin: 30px auto;
+  max-width: 900px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+}
+
+h1 {
+  text-align: center;
+  color: #2362a8;
+  margin-bottom: 25px;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.upload-section label {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
+.img-tools {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#mainCanvas {
+  border: 2px solid #c9c9c9;
+  border-radius: 8px;
+  background: #eef1f7;
+  max-width: 440px;
+  max-height: 420px;
+  width: 440px;
+  height: 420px;
+  margin-bottom: 12px;
+}
+
+.tool-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.tool-controls h2 {
+  margin-bottom: 6px;
+  color: #2362a8;
+}
+
+button,
+select {
+  padding: 9px 18px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #2362a8;
+  color: #fff;
+  font-size: 1em;
+  margin-bottom: 8px;
+  transition: background 0.2s;
+}
+
+button:hover, select:hover {
+  background: #174a7c;
+}
+
+#cropBtn {
+  margin-top: 10px;
+  background: #34b374;
+}
+
+#cropBtn:hover {
+  background: #24965b;
+}
+
+#resetBtn {
+  background: #e25564;
+}
+
+#resetBtn:hover {
+  background: #c84054;
+}
